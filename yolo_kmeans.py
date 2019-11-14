@@ -88,7 +88,7 @@ class kmeans_yolo():
 
     def get_miou(self,bbxs,clusters):
         iou = self.get_iou(bbxs,clusters)
-        print(np.sum(iou>1))
+        #print(np.sum(iou>1))
         iou = np.max(iou,axis=1)
 
         return np.mean(iou)
